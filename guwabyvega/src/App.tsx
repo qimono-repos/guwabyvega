@@ -77,9 +77,9 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     color: '#FFFFFF',
-    fontSize: 160,
-    lineHeight: 170,
-    fontWeight: '600',
+    fontSize: 120,
+    lineHeight: 120,
+    fontWeight: '500',
   },
   headerSubtitle: {
     color: '#FFFFFF',
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   focusedTitle: {
     color: '#FFFFFF',
-    fontSize: 150,
+    fontSize: 120,
     lineHeight: 160,
     fontWeight: 'bold',
     width: 560,

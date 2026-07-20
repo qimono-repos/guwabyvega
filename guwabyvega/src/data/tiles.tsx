@@ -24,13 +24,17 @@ export const tiles: TileData[] = [
   },
   {
     id: 'get-started',
-    label: 'Guwaby ',
+    label: 'Guwaby',
     accessibilityLabel: 'Guwaby Project',
     description: (
-      <>
-        Edit <Text style={descStyles.bold}>App.tsx</Text> for live changes.
-        {'\n'}Not seeing updates? Check Fast Refresh is enabled.
+        <>
+        This is the <Text style={descStyles.bold}>Pet tracker</Text> App for Vega.
+        {'\n'}For mobile control Scan the QR Code in the next screen.
       </>
+      // <>
+      //   Edit <Text style={descStyles.bold}>App.tsx</Text> for live changes.
+      //   {'\n'}Not seeing updates? Check Fast Refresh is enabled.
+      // </>
     ),
     icon: require('../assets/get-started.png'),
   },
