@@ -24,10 +24,11 @@ describe('App', () => {
     expect(screen.getByTestId('tile-learn-more')).toBeTruthy();
   });
 
-  it('renders Pet Finder Map background and QR Code Widget', () => {
+  it('renders Pet Finder Map background, QR Code Widget, and Pet Avatar', () => {
     const screen = render(<App />);
     expect(screen.getByTestId('pet-finder-map')).toBeTruthy();
     expect(screen.getByTestId('qr-code-widget')).toBeTruthy();
+    expect(screen.getByTestId('pet-avatar')).toBeTruthy();
   });
 
   it('Home tile is focused by default', () => {

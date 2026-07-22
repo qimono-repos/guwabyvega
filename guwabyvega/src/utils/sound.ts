@@ -26,8 +26,25 @@ export const playFocusSound = () => {
 
       osc.start();
       osc.stop(ctx.currentTime + 0.04);
+    } else {
+      const error = new Error(
+        'playFocusSound could not run because no AudioContext support is available in this runtime.'
+      );
+      console.error('[playFocusSound] AudioContext unavailable', {
+        hasGlobal: typeof global !== 'undefined',
+        hasWindow: !!win?.window,
+        hasAudioContext: !!win?.AudioContext,
+        hasWebkitAudioContext: !!win?.webkitAudioContext,
+        runtime: typeof globalThis !== 'undefined' ? 'globalThis' : 'unknown',
+        error,
+      });
+      throw error;
     }
   } catch (e) {
-    // Fallback gracefully if AudioContext is unsupported
+    const errorMessage = e instanceof Error ? e.message : String(e);
+    console.error('[playFocusSound] Failed to play focus sound', {
+      error: errorMessage,
+      stack: e instanceof Error ? e.stack : undefined,
+    });
   }
 };

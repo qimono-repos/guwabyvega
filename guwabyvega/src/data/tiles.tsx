@@ -66,8 +66,8 @@ export const tiles: TileData[] = [
     accessibilityLabel: 'Guwaby Project',
     description: (
       <>
-        This is the <Text style={descStyles.bold}>Pet tracker</Text> App for
-        Vega.
+        Real-time UWB Pet Tracking & Path History for Vega Fire TV This is the{' '}
+        <Text style={descStyles.bold}>Pet tracker</Text> App for Vega.
         {'\n'}For mobile control scan the QR Code.
       </>
     ),

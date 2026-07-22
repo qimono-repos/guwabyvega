@@ -28,15 +28,13 @@ export const App = () => {
             <>
               <View style={styles.headerTextContainer}>
                 <Text style={styles.headerTitle}>Guwaby Pet Finder</Text>
-                <Text style={styles.headerSubtitle}>
-                  Real-time UWB Pet Tracking & Path History for Vega Fire TV
-                </Text>
+                <Text style={styles.headerSubtitle} />
               </View>
               <Image
-                source={require('./assets/vega.png')}
-                style={styles.vegaLogo}
-                resizeMode="contain"
-                testID="vega-logo"
+                source={require('./assets/dog_avatar.png')}
+                style={styles.petAvatar}
+                resizeMode="cover"
+                testID="pet-avatar"
               />
             </>
           ) : (
@@ -116,11 +114,17 @@ const styles = StyleSheet.create({
     textShadowOffset: {width: 0, height: 2},
     textShadowRadius: 8,
   },
-  vegaLogo: {
-    width: 320,
-    height: 220,
+  petAvatar: {
+    width: 210,
+    height: 210,
+    borderRadius: 42,
     marginLeft: 60,
-    opacity: 0.9,
+    borderWidth: 3,
+    borderColor: 'rgba(0, 229, 255, 0.8)',
+    shadowColor: '#00E5FF',
+    shadowOffset: {width: 0, height: 8},
+    shadowOpacity: 0.7,
+    shadowRadius: 20,
   },
   focusedTitle: {
     color: '#FFFFFF',
