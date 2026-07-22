@@ -4,18 +4,30 @@ import * as React from 'react';
 
 import {App} from '../src/App';
 
+if (!(jest as any).now) {
+  (jest as any).now = Date.now;
+}
+
 describe('App', () => {
   it('matches snapshot', () => {
     const screen = render(<App />);
     expect(screen).toMatchSnapshot();
   });
 
-  it('renders all four tiles', () => {
+  it('renders all tiles including location waypoints', () => {
     const screen = render(<App />);
     expect(screen.getByTestId('tile-home')).toBeTruthy();
+    expect(screen.getByTestId('tile-loc-park')).toBeTruthy();
+    expect(screen.getByTestId('tile-loc-vet')).toBeTruthy();
     expect(screen.getByTestId('tile-get-started')).toBeTruthy();
     expect(screen.getByTestId('tile-debug')).toBeTruthy();
     expect(screen.getByTestId('tile-learn-more')).toBeTruthy();
+  });
+
+  it('renders Pet Finder Map background and QR Code Widget', () => {
+    const screen = render(<App />);
+    expect(screen.getByTestId('pet-finder-map')).toBeTruthy();
+    expect(screen.getByTestId('qr-code-widget')).toBeTruthy();
   });
 
   it('Home tile is focused by default', () => {

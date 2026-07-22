@@ -2,386 +2,692 @@
 
 exports[`App matches snapshot 1`] = `
 <View
-  accessibilityIgnoresInvertColors={true}
   style={
     Object {
+      "backgroundColor": "#050D1A",
       "flex": 1,
-      "padding": 160,
     }
   }
 >
-  <Image
-    source={
-      Object {
-        "testUri": "../../../src/assets/background.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "bottom": 0,
-          "left": 0,
-          "position": "absolute",
-          "right": 0,
-          "top": 0,
-        },
-        Object {
-          "height": undefined,
-          "width": undefined,
-        },
-        undefined,
-      ]
-    }
-  />
   <View
     style={
       Object {
-        "alignItems": "flex-start",
-        "flex": 3,
-        "flexDirection": "row",
+        "backgroundColor": "#050D1A",
+        "bottom": 0,
+        "left": 0,
+        "overflow": "hidden",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
       }
     }
+    testID="pet-finder-map"
   >
     <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "#FFFFFF",
-            "fontSize": 160,
-            "fontWeight": "600",
-            "lineHeight": 170,
-          }
-        }
-      >
-        Hello Vega,
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#FFFFFF",
-            "fontSize": 50,
-          }
-        }
-      >
-        Use your remote to explore and start your Vega journey 🚀
-      </Text>
-    </View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../src/assets/vega.png",
-        }
-      }
-      style={
-        Object {
-          "height": 350,
-          "marginLeft": 120,
-          "width": 500,
-        }
-      }
-      testID="vega-logo"
-    />
-  </View>
-  <View
-    collapsable={false}
-    destinations={Array []}
-    style={
-      Array [
-        Object {
-          "minHeight": 1,
-          "minWidth": 1,
-        },
-        Object {
-          "alignItems": "flex-end",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        },
-        Object {
-          "display": "flex",
-        },
-      ]
-    }
-  >
-    <View
-      accessibilityLabel="Home"
-      accessibilityRole="button"
-      accessibilityState={
-        Object {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        Object {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
       collapsable={false}
-      focusable={false}
-      hasTVPreferredFocus={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#FF6200",
-          "borderRadius": 44,
-          "height": 320,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 20,
+          "height": "100%",
           "transform": Array [
             Object {
-              "scale": 1.1,
+              "scale": 1,
             },
           ],
-          "width": 320,
+          "width": "100%",
         }
       }
-      testID="tile-home"
     >
-      <View
+      <Image
+        resizeMode="cover"
+        source={
+          Object {
+            "testUri": "../../../src/assets/map_background.png",
+          }
+        }
         style={
           Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
+            "height": "100%",
+            "opacity": 0.85,
+            "width": "100%",
+          }
+        }
+      />
+      <View
+        pointerEvents="none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
           }
         }
       >
-        <Image
-          accessible={false}
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../src/assets/home.png",
-            }
-          }
+        <View
           style={
-            Object {
-              "height": 80,
-              "tintColor": "#FFFFFF",
-              "width": 80,
-            }
+            Array [
+              Object {
+                "backgroundColor": "#00E5FF",
+                "borderRadius": 3,
+                "height": 6,
+                "position": "absolute",
+                "shadowColor": "#00E5FF",
+                "shadowOffset": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.9,
+                "shadowRadius": 10,
+              },
+              Object {
+                "left": "32%",
+                "top": "32%",
+                "transform": Array [
+                  Object {
+                    "rotate": "34deg",
+                  },
+                ],
+                "width": "24%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#00E5FF",
+                "borderRadius": 3,
+                "height": 6,
+                "position": "absolute",
+                "shadowColor": "#00E5FF",
+                "shadowOffset": Object {
+                  "height": 0,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.9,
+                "shadowRadius": 10,
+              },
+              Object {
+                "left": "54%",
+                "top": "48%",
+                "transform": Array [
+                  Object {
+                    "rotate": "28deg",
+                  },
+                ],
+                "width": "22%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "rgba(0, 229, 255, 0.4)",
+                "borderStyle": "dashed",
+                "borderWidth": 2,
+                "height": 4,
+                "position": "absolute",
+              },
+              Object {
+                "left": "32%",
+                "top": "32%",
+                "transform": Array [
+                  Object {
+                    "rotate": "38deg",
+                  },
+                ],
+                "width": "45%",
+              },
+            ]
           }
         />
       </View>
       <View
         style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
-          }
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginLeft": -25,
+              "marginTop": -25,
+              "position": "absolute",
+            },
+            Object {
+              "left": "32%",
+              "top": "32%",
+            },
+          ]
         }
       >
-        <Text
+        <View
+          collapsable={false}
           style={
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 52,
-              "fontWeight": "bold",
-              "includeFontPadding": false,
-              "lineHeight": 52,
-              "textAlign": "center",
+              "backgroundColor": "rgba(0, 229, 255, 0.4)",
+              "borderColor": "#00E5FF",
+              "borderRadius": 30,
+              "borderWidth": 2,
+              "height": 60,
+              "opacity": 0.8,
+              "position": "absolute",
+              "transform": Array [
+                Object {
+                  "scale": 1,
+                },
+              ],
+              "width": 60,
             }
           }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 22,
+                "borderWidth": 3,
+                "height": 44,
+                "justifyContent": "center",
+                "shadowOffset": Object {
+                  "height": 4,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.5,
+                "shadowRadius": 8,
+                "width": 44,
+              },
+              Object {
+                "backgroundColor": "#FF6200",
+                "borderColor": "#FFFFFF",
+              },
+            ]
+          }
         >
-          Home
-        </Text>
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            🏠
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(15, 23, 42, 0.85)",
+                "borderColor": "rgba(255, 255, 255, 0.15)",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "minWidth": 180,
+                "paddingHorizontal": 14,
+                "paddingVertical": 8,
+                "position": "absolute",
+                "top": 52,
+              },
+              Object {
+                "backgroundColor": "rgba(255, 98, 0, 0.9)",
+                "borderColor": "#FFFFFF",
+                "transform": Array [
+                  Object {
+                    "scale": 1.08,
+                  },
+                ],
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Home (Current Location)
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#E2E8F0",
+                "fontSize": 13,
+                "marginTop": 2,
+              }
+            }
+          >
+            Current • 10m ago
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginLeft": -25,
+              "marginTop": -25,
+              "position": "absolute",
+            },
+            Object {
+              "left": "54%",
+              "top": "48%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 22,
+                "borderWidth": 3,
+                "height": 44,
+                "justifyContent": "center",
+                "shadowOffset": Object {
+                  "height": 4,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.5,
+                "shadowRadius": 8,
+                "width": 44,
+              },
+              Object {
+                "backgroundColor": "#1E293B",
+                "borderColor": "#00E5FF",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            🌳
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(15, 23, 42, 0.85)",
+                "borderColor": "rgba(255, 255, 255, 0.15)",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "minWidth": 180,
+                "paddingHorizontal": 14,
+                "paddingVertical": 8,
+                "position": "absolute",
+                "top": 52,
+              },
+              false,
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Central Bark Park
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#E2E8F0",
+                "fontSize": 13,
+                "marginTop": 2,
+              }
+            }
+          >
+            45 mins stay
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginLeft": -25,
+              "marginTop": -25,
+              "position": "absolute",
+            },
+            Object {
+              "left": "74%",
+              "top": "62%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 22,
+                "borderWidth": 3,
+                "height": 44,
+                "justifyContent": "center",
+                "shadowOffset": Object {
+                  "height": 4,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.5,
+                "shadowRadius": 8,
+                "width": 44,
+              },
+              Object {
+                "backgroundColor": "#1E293B",
+                "borderColor": "#00E5FF",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+              }
+            }
+          >
+            🩺
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(15, 23, 42, 0.85)",
+                "borderColor": "rgba(255, 255, 255, 0.15)",
+                "borderRadius": 12,
+                "borderWidth": 1,
+                "minWidth": 180,
+                "paddingHorizontal": 14,
+                "paddingVertical": 8,
+                "position": "absolute",
+                "top": 52,
+              },
+              false,
+            ]
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Pet Care Clinic (Veterinary)
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#E2E8F0",
+                "fontSize": 13,
+                "marginTop": 2,
+              }
+            }
+          >
+            20 mins stay
+          </Text>
+        </View>
       </View>
     </View>
     <View
-      accessibilityLabel="Get started"
-      accessibilityRole="button"
-      accessibilityState={
-        Object {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        Object {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={false}
-      hasTVPreferredFocus={false}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#0074B8",
-          "borderRadius": 44,
-          "height": 320,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 20,
-          "width": 320,
+          "backgroundColor": "rgba(10, 18, 30, 0.88)",
+          "borderColor": "rgba(0, 229, 255, 0.3)",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "left": 60,
+          "paddingHorizontal": 28,
+          "paddingVertical": 18,
+          "position": "absolute",
+          "right": 320,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 8,
+            "width": 0,
+          },
+          "shadowOpacity": 0.6,
+          "shadowRadius": 16,
+          "top": 40,
         }
       }
-      testID="tile-get-started"
+    >
+      <Text
+        style={
+          Object {
+            "color": "#00E5FF",
+            "fontSize": 14,
+            "fontWeight": "900",
+            "letterSpacing": 2,
+            "marginBottom": 6,
+          }
+        }
+      >
+        🎙️ AIRPORT NARRATION
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 22,
+            "fontWeight": "600",
+            "lineHeight": 30,
+          }
+        }
+      >
+        "
+        Home (Current Location)
+         — 
+        10:15 AM
+        .
+         
+        Pet is safely resting at home (Signal: 98% UWB Precision).
+        "
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgba(15, 23, 42, 0.88)",
+        "borderColor": "rgba(255, 255, 255, 0.2)",
+        "borderRadius": 24,
+        "borderWidth": 1.5,
+        "flexDirection": "row",
+        "paddingHorizontal": 20,
+        "paddingVertical": 14,
+        "position": "absolute",
+        "right": 60,
+        "shadowColor": "#000000",
+        "shadowOffset": Object {
+          "height": 10,
+          "width": 0,
+        },
+        "shadowOpacity": 0.5,
+        "shadowRadius": 20,
+        "top": 40,
+        "zIndex": 100,
+      }
+    }
+    testID="qr-code-widget"
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 12,
+          "height": 64,
+          "justifyContent": "center",
+          "padding": 6,
+          "width": 64,
+        }
+      }
     >
       <View
         style={
           Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
+            "backgroundColor": "#FFFFFF",
+            "height": "100%",
+            "position": "relative",
+            "width": "100%",
           }
         }
       >
-        <Image
-          accessible={false}
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../src/assets/get-started.png",
-            }
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#0F172A",
+                "borderRadius": 3,
+                "borderWidth": 4,
+                "height": 18,
+                "position": "absolute",
+                "width": 18,
+              },
+              Object {
+                "left": 0,
+                "top": 0,
+              },
+            ]
           }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#0F172A",
+                "borderRadius": 3,
+                "borderWidth": 4,
+                "height": 18,
+                "position": "absolute",
+                "width": 18,
+              },
+              Object {
+                "right": 0,
+                "top": 0,
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "borderColor": "#0F172A",
+                "borderRadius": 3,
+                "borderWidth": 4,
+                "height": 18,
+                "position": "absolute",
+                "width": 18,
+              },
+              Object {
+                "bottom": 0,
+                "left": 0,
+              },
+            ]
+          }
+        />
+        <View
           style={
             Object {
-              "height": 80,
-              "tintColor": "#FFFFFF",
-              "width": 80,
+              "backgroundColor": "#FF6200",
+              "borderRadius": 3,
+              "bottom": 4,
+              "height": 14,
+              "position": "absolute",
+              "right": 4,
+              "width": 14,
             }
           }
         />
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Text
-          style={
-            Object {
-              "color": "#FFFFFF",
-              "fontSize": 52,
-              "fontWeight": "bold",
-              "includeFontPadding": false,
-              "lineHeight": 52,
-              "textAlign": "center",
-            }
-          }
-        >
-          Get
-started
-        </Text>
       </View>
     </View>
     <View
-      accessibilityLabel="Test and Debug"
-      accessibilityRole="button"
-      accessibilityState={
-        Object {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        Object {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={false}
-      hasTVPreferredFocus={false}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
       style={
         Object {
-          "backgroundColor": "#0074B8",
-          "borderRadius": 44,
-          "height": 320,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 20,
-          "width": 320,
+          "marginLeft": 16,
         }
       }
-      testID="tile-debug"
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 18,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Continue on the Phone
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#94A3B8",
+            "fontSize": 13,
+            "marginTop": 2,
+          }
+        }
+      >
+        Scan to open GUWABY Mobile
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "space-between",
+        "paddingBottom": 60,
+        "paddingHorizontal": 80,
+        "paddingTop": 120,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flex": 2,
+          "flexDirection": "row",
+          "marginTop": 60,
+        }
+      }
     >
       <View
         style={
           Object {
-            "alignItems": "center",
             "flex": 1,
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Image
-          accessible={false}
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../src/assets/debug.png",
-            }
-          }
-          style={
-            Object {
-              "height": 80,
-              "tintColor": "#FFFFFF",
-              "width": 80,
-            }
-          }
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
           }
         }
       >
@@ -389,113 +695,889 @@ started
           style={
             Object {
               "color": "#FFFFFF",
-              "fontSize": 52,
-              "fontWeight": "bold",
-              "includeFontPadding": false,
-              "lineHeight": 52,
-              "textAlign": "center",
+              "fontSize": 90,
+              "fontWeight": "800",
+              "lineHeight": 100,
+              "textShadowColor": "rgba(0, 0, 0, 0.8)",
+              "textShadowOffset": Object {
+                "height": 4,
+                "width": 0,
+              },
+              "textShadowRadius": 10,
             }
           }
         >
-          Test &
+          Guwaby Pet Finder
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#00E5FF",
+              "fontSize": 34,
+              "fontWeight": "600",
+              "marginTop": 12,
+              "textShadowColor": "rgba(0, 0, 0, 0.8)",
+              "textShadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "textShadowRadius": 8,
+            }
+          }
+        >
+          Real-time UWB Pet Tracking & Path History for Vega Fire TV
+        </Text>
+      </View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../src/assets/vega.png",
+          }
+        }
+        style={
+          Object {
+            "height": 220,
+            "marginLeft": 60,
+            "opacity": 0.9,
+            "width": 320,
+          }
+        }
+        testID="vega-logo"
+      />
+    </View>
+    <View
+      collapsable={false}
+      destinations={Array []}
+      style={
+        Array [
+          Object {
+            "minHeight": 1,
+            "minWidth": 1,
+          },
+          Object {
+            "alignItems": "flex-end",
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "paddingVertical": 20,
+          },
+          Object {
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityLabel="Home Pet Finder"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FF6200",
+            "borderColor": "#FFFFFF",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#FF6200",
+            "shadowOffset": Object {
+              "height": 16,
+              "width": 0,
+            },
+            "shadowOpacity": 0.8,
+            "shadowRadius": 28,
+            "transform": Array [
+              Object {
+                "scale": 1.1,
+              },
+            ],
+            "width": 280,
+          }
+        }
+        testID="tile-home"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/home.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                Object {
+                  "tintColor": "#FFFFFF",
+                  "transform": Array [
+                    Object {
+                      "scale": 1.12,
+                    },
+                  ],
+                },
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                Object {
+                  "color": "#FFFFFF",
+                  "fontWeight": "900",
+                },
+              ]
+            }
+          >
+            Pet
+Finder
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": 8,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "borderRadius": 3,
+                  "height": 6,
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#00E5FF",
+                    "borderRadius": 3,
+                    "height": "100%",
+                    "width": "65%",
+                  }
+                }
+              />
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#E2E8F0",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "marginTop": 4,
+                }
+              }
+            >
+              Current • 10m ago
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Nearest Park Location"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0074B8",
+            "borderColor": "rgba(255, 255, 255, 0.15)",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.6,
+            "shadowRadius": 18,
+            "width": 280,
+          }
+        }
+        testID="tile-loc-park"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/get-started.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                false,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                false,
+              ]
+            }
+          >
+            Nearest
+Park
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": 8,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "borderRadius": 3,
+                  "height": 6,
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#00E5FF",
+                    "borderRadius": 3,
+                    "height": "100%",
+                    "width": "65%",
+                  }
+                }
+              />
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#E2E8F0",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "marginTop": 4,
+                }
+              }
+            >
+              45m stay
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Nearest Veterinary Clinic"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0074B8",
+            "borderColor": "rgba(255, 255, 255, 0.15)",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.6,
+            "shadowRadius": 18,
+            "width": 280,
+          }
+        }
+        testID="tile-loc-vet"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/get-started.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                false,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                false,
+              ]
+            }
+          >
+            Nearest
+Vet
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "marginTop": 8,
+                "width": "100%",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "rgba(255, 255, 255, 0.3)",
+                  "borderRadius": 3,
+                  "height": 6,
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#00E5FF",
+                    "borderRadius": 3,
+                    "height": "100%",
+                    "width": "65%",
+                  }
+                }
+              />
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#E2E8F0",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "marginTop": 4,
+                }
+              }
+            >
+              20m stay
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Guwaby Project"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0074B8",
+            "borderColor": "rgba(255, 255, 255, 0.15)",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.6,
+            "shadowRadius": 18,
+            "width": 280,
+          }
+        }
+        testID="tile-get-started"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/get-started.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                false,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                false,
+              ]
+            }
+          >
+            Guwaby
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityLabel="Test and Debug"
+        accessibilityRole="button"
+        accessibilityState={
+          Object {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0074B8",
+            "borderColor": "rgba(255, 255, 255, 0.15)",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.6,
+            "shadowRadius": 18,
+            "width": 280,
+          }
+        }
+        testID="tile-debug"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/debug.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                false,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                false,
+              ]
+            }
+          >
+            Test &
 Debug
-        </Text>
-      </View>
-    </View>
-    <View
-      accessibilityLabel="Learn more"
-      accessibilityRole="button"
-      accessibilityState={
-        Object {
-          "busy": undefined,
-          "checked": undefined,
-          "disabled": undefined,
-          "expanded": undefined,
-          "selected": undefined,
-        }
-      }
-      accessibilityValue={
-        Object {
-          "max": undefined,
-          "min": undefined,
-          "now": undefined,
-          "text": undefined,
-        }
-      }
-      accessible={true}
-      collapsable={false}
-      focusable={false}
-      hasTVPreferredFocus={false}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "backgroundColor": "#0074B8",
-          "borderRadius": 44,
-          "height": 320,
-          "opacity": 1,
-          "overflow": "hidden",
-          "padding": 20,
-          "width": 320,
-        }
-      }
-      testID="tile-learn-more"
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
-          }
-        }
-      >
-        <Image
-          accessible={false}
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../src/assets/learn-more.png",
-            }
-          }
-          style={
-            Object {
-              "height": 80,
-              "tintColor": "#FFFFFF",
-              "width": 80,
-            }
-          }
-        />
+          </Text>
+        </View>
       </View>
       <View
-        style={
+        accessibilityLabel="Learn more"
+        accessibilityRole="button"
+        accessibilityState={
           Object {
-            "alignItems": "center",
-            "flex": 1,
-            "justifyContent": "center",
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
           }
         }
+        accessibilityValue={
+          Object {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hasTVPreferredFocus={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#0074B8",
+            "borderColor": "rgba(255, 255, 255, 0.15)",
+            "borderRadius": 32,
+            "borderWidth": 2,
+            "height": 280,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 24,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 12,
+              "width": 0,
+            },
+            "shadowOpacity": 0.6,
+            "shadowRadius": 18,
+            "width": 280,
+          }
+        }
+        testID="tile-learn-more"
       >
-        <Text
+        <View
           style={
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 52,
-              "fontWeight": "bold",
-              "includeFontPadding": false,
-              "lineHeight": 52,
-              "textAlign": "center",
+              "alignItems": "center",
+              "flex": 1.2,
+              "justifyContent": "center",
             }
           }
         >
-          Learn
+          <Image
+            accessible={false}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../src/assets/learn-more.png",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 80,
+                  "tintColor": "#FFFFFF",
+                  "width": 80,
+                },
+                false,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 36,
+                  "fontWeight": "bold",
+                  "includeFontPadding": false,
+                  "lineHeight": 44,
+                  "textAlign": "center",
+                },
+                false,
+              ]
+            }
+          >
+            Learn
 more
-        </Text>
+          </Text>
+        </View>
       </View>
     </View>
   </View>

@@ -7,6 +7,8 @@ export interface TileData {
   accessibilityLabel: string;
   description?: string | React.JSX.Element;
   icon: ImageSourcePropType;
+  timeSpentProgress?: string;
+  locationId?: string;
 }
 
 const descStyles = StyleSheet.create({
@@ -18,23 +20,56 @@ const descStyles = StyleSheet.create({
 export const tiles: TileData[] = [
   {
     id: 'home',
-    label: 'Home',
-    accessibilityLabel: 'Home',
+    label: 'Pet\nFinder',
+    accessibilityLabel: 'Home Pet Finder',
+    description: (
+      <>
+        Live <Text style={descStyles.bold}>Pet Tracker</Text> & path history
+        animation on Fire TV.
+      </>
+    ),
     icon: require('../assets/home.png'),
+    timeSpentProgress: 'Current • 10m ago',
+    locationId: 'loc-home',
+  },
+  {
+    id: 'loc-park',
+    label: 'Nearest\nPark',
+    accessibilityLabel: 'Nearest Park Location',
+    description: (
+      <>
+        <Text style={descStyles.bold}>Central Bark Park</Text> — Visited 08:30
+        AM. Total stay: 45 minutes.
+      </>
+    ),
+    icon: require('../assets/get-started.png'),
+    timeSpentProgress: '45m stay',
+    locationId: 'loc-park',
+  },
+  {
+    id: 'loc-vet',
+    label: 'Nearest\nVet',
+    accessibilityLabel: 'Nearest Veterinary Clinic',
+    description: (
+      <>
+        <Text style={descStyles.bold}>Pet Care Clinic</Text> — Routine vet visit
+        at 09:30 AM. Total stay: 20 minutes.
+      </>
+    ),
+    icon: require('../assets/get-started.png'),
+    timeSpentProgress: '20m stay',
+    locationId: 'loc-vet',
   },
   {
     id: 'get-started',
     label: 'Guwaby',
     accessibilityLabel: 'Guwaby Project',
     description: (
-        <>
-        This is the <Text style={descStyles.bold}>Pet tracker</Text> App for Vega.
-        {'\n'}For mobile control Scan the QR Code in the next screen.
+      <>
+        This is the <Text style={descStyles.bold}>Pet tracker</Text> App for
+        Vega.
+        {'\n'}For mobile control scan the QR Code.
       </>
-      // <>
-      //   Edit <Text style={descStyles.bold}>App.tsx</Text> for live changes.
-      //   {'\n'}Not seeing updates? Check Fast Refresh is enabled.
-      // </>
     ),
     icon: require('../assets/get-started.png'),
   },
